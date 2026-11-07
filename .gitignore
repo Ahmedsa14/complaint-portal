@@ -1,0 +1,12 @@
+# Local config and secrets
+.env
+config.local.php
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Test files
+hello.php
+dbtest.php

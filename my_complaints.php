@@ -15,8 +15,10 @@ $result = $stmt->get_result();
 <html>
 <head>
     <title>My Complaints</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container wide">
     <h2>My Complaints</h2>
     <table border="1" cellpadding="8">
         <tr>
@@ -35,5 +37,6 @@ $result = $stmt->get_result();
         <?php } ?>
     </table>
     <p><a href="dashboard.php">Back to dashboard</a></p>
+    </div>
 </body>
 </html>

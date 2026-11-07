@@ -28,8 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Submit Complaint</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
     <h2>Submit a Complaint</h2>
     <p><?php echo $message; ?></p>
     <form method="POST">
@@ -46,5 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit">Submit</button>
     </form>
     <p><a href="dashboard.php">Back to dashboard</a></p>
+    </div>
 </body>
 </html>

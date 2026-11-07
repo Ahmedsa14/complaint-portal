@@ -10,8 +10,10 @@ if (!isset($_SESSION['user_id'])) {
 <html>
 <head>
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
     <h2>Welcome, <?php echo htmlspecialchars($_SESSION['name']); ?>!</h2>
     <p>Your role: <?php echo $_SESSION['role']; ?></p>
     <p><a href="add_complaint.php">Submit a Complaint</a></p>
@@ -20,5 +22,6 @@ if (!isset($_SESSION['user_id'])) {
     <p><a href="admin_complaints.php">Manage All Complaints</a></p>
 <?php } ?>
 <p><a href="logout.php">Logout</a></p>
+</div>
 </body>
 </html>

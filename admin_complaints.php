@@ -24,10 +24,12 @@ $result = $conn->query("SELECT c.id, c.title, c.category, c.description, c.statu
 <html>
 <head>
     <title>All Complaints</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container wide">
     <h2>All Complaints (Admin)</h2>
-    <table border="1" cellpadding="8">
+    <table>
         <tr>
             <th>Student</th>
             <th>Title</th>
@@ -58,5 +60,6 @@ $result = $conn->query("SELECT c.id, c.title, c.category, c.description, c.statu
         <?php } ?>
     </table>
     <p><a href="dashboard.php">Back to dashboard</a></p>
+    </div>
 </body>
 </html>
